@@ -1,0 +1,64 @@
+*.iml
+.gradle
+/local.properties
+/.idea/caches
+/.idea/libraries
+/.idea/modules.xml
+/.idea/workspace.xml
+/.idea/navEditor.xml
+/.idea/assetWizardSettings.xml
+.DS_Store
+/build
+/captures
+.externalNativeBuild
+.cxx
+local.properties
+
+# Built application files
+*.apk
+*.ap_
+*.aab
+*.apks
+*.dex
+*.oat
+*.so
+
+# Gradle files
+.gradle/
+/build/
+/captures/
+
+# Android Studio files
+.idea/
+/.idea/tasks.xml
+/.idea/dictionaries
+/.idea/gradle.xml
+
+# User-specific files
+/.gradle/
+/.gradle/caches/
+/.gradle/wrapper/
+
+# Crashlytics files
+/crashlytics.properties
+
+# ProGuard files
+/proguard/
+/proguard-*.txt
+/build/outputs/mapping/
+
+# Generated files
+/generated/
+
+# Signing files
+/keystore.jks
+/release.keystore
+/signing.properties
+
+# System files
+Thumbs.db
+
+# Logs and crash reports
+/logs/
+/crash-reports/
+
