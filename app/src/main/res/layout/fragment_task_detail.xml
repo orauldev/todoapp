@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:id="@+id/coordinator_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/task_detail_container_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".ui.taskdetail.TaskDetailFragment">
+
+            <CheckBox
+                android:id="@+id/complete_checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/title_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/size_16dp"
+                android:layout_marginEnd="@dimen/size_16dp"
+                android:textAlignment="textStart"
+                android:textAppearance="@style/TextAppearance.Material3.TitleLarge"
+                app:layout_constraintBaseline_toBaselineOf="@+id/complete_checkbox"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/complete_checkbox"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="title here" />
+
+            <TextView
+                android:id="@+id/description_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/size_8dp"
+                android:textAlignment="textStart"
+                android:textAppearance="@style/TextAppearance.Material3.BodyLarge"
+                app:layout_constraintEnd_toEndOf="@+id/title_text"
+                app:layout_constraintStart_toStartOf="@+id/title_text"
+                app:layout_constraintTop_toBottomOf="@+id/title_text"
+                tools:text="description here" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_edit_task"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/size_16dp"
+            android:backgroundTint="@color/colorAccent"
+            android:src="@drawable/ic_edit"
+            app:elevation="@dimen/size_8dp"
+            app:fabSize="normal"
+            app:layout_anchor="@id/task_detail_container_layout"
+            app:layout_anchorGravity="bottom|right|end"
+            app:tint="@android:color/white" />
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+    </ScrollView>
+</layout>

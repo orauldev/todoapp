@@ -1,6 +1,41 @@
 <resources>
-    <string name="app_name">TodoApp</string>
-    <string name="title_home">Home</string>
-    <string name="title_dashboard">Dashboard</string>
-    <string name="title_notifications">Notifications</string>
+    <string name="app_name" translatable="false">Todo</string>
+
+    <string name="title_tasks">Tasks</string>
+    <string name="title_statistics">Statistics</string>
+    <string name="title_taskdetail">Task Detail</string>
+    <string name="title_addtask">New Task</string>
+    <string name="title_edittask">Edit Task</string>
+
+    <string name="label_all">All Tasks</string>
+    <string name="label_active">Active Tasks</string>
+    <string name="label_completed">Completed Tasks</string>
+
+    <string name="menu_filter">Filter</string>
+    <string name="menu_clear">Clear completed</string>
+    <string name="menu_refresh">Refresh</string>
+    <string name="menu_delete_task">Delete task</string>
+
+    <string name="all_tasks">All</string>
+    <string name="active_tasks">Active</string>
+    <string name="completed_tasks">Completed</string>
+
+    <string name="no_tasks_all">You have no tasks!</string>
+    <string name="no_tasks_active">You have no active tasks!</string>
+    <string name="no_tasks_completed">You have no completed tasks!</string>
+    <string name="successfully_deleted_task_message">Task was deleted</string>
+    <string name="successfully_saved_task_message">Task saved</string>
+    <string name="loading_tasks_error">Error while loading tasks</string>
+    <string name="task_marked_complete">Task marked complete</string>
+    <string name="task_marked_active">Task marked active</string>
+    <string name="empty_task_message">Tasks cannot be empty</string>
+    <string name="completed_tasks_cleared">Completed tasks cleared</string>
+    <string name="statistics_no_tasks">You have no tasks</string>
+    <string name="statistics_error">Error, try again</string>
+    <string name="statistics_active_tasks">Active tasks:\n %.1f%%</string>
+    <string name="statistics_completed_tasks">Completed tasks:\n %.1f%%</string>
+
+    <string name="task_title_field">Title</string>
+    <string name="task_description_field">Enter your task here</string>
+
 </resources>

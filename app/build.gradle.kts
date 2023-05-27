@@ -5,16 +5,17 @@ plugins {
     alias(libs.plugins.kapt)
     alias(libs.plugins.ksp)
     alias(libs.plugins.hilt)
+    alias(libs.plugins.kotlin.parcelize)
 }
 
 android {
     namespace = "com.orauldev.todoapp"
-    compileSdk = 33
+    compileSdk = libs.versions.compileSdk.get().toInt()
 
     defaultConfig {
         applicationId = "com.orauldev.todoapp"
-        minSdk = 24
-        targetSdk = 33
+        minSdk = libs.versions.minSdk.get().toInt()
+        targetSdk = libs.versions.targetSdk.get().toInt()
         versionCode = 1
         versionName = "1.0"
 
@@ -22,6 +23,14 @@ android {
     }
 
     buildTypes {
+        debug {
+            isMinifyEnabled = false
+            isShrinkResources = false
+            proguardFiles(
+                getDefaultProguardFile("proguard-android-optimize.txt"),
+                "proguard-rules.pro"
+            )
+        }
         release {
             isMinifyEnabled = false
             proguardFiles(
@@ -37,8 +46,8 @@ android {
     kotlinOptions {
         jvmTarget = "1.8"
     }
-    buildFeatures {
-        viewBinding = true
+    dataBinding {
+        enable = true
     }
 }
 
@@ -61,5 +70,5 @@ dependencies {
     implementation(libs.androidx.navigation.uiKtx)
 
     implementation(libs.hilt.android.core)
-    ksp(libs.hilt.compiler)
+    kapt(libs.hilt.compiler)
 }

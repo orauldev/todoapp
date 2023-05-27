@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_tasks"
+        android:icon="@drawable/ic_tasks"
+        android:checkable="true"
+        android:title="@string/title_tasks" />
+
+    <item
+        android:id="@+id/nav_statistics"
+        android:icon="@drawable/ic_statistics"
+        android:checkable="true"
+        android:title="@string/title_statistics" />
+
+</menu>
