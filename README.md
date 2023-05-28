@@ -1,6 +1,6 @@
 <h1 align="center">Todo App</h1>
 
-Welcome to my first open-source project. The main purpose of this project is to help anyone who wants to learn how to build an app with a modern architecture and follow best practices according to the Android documentation.
+Welcome to my Todo project. The main purpose of this project is to help anyone who wants to learn how to build an app with a modern architecture and follow best practices according to the Android documentation.
 
 ### ✨ Contribution 
 This repository is open to contributions, feel free to include your material directly by submitting a pull request. If you have any questions, suggestions, let's see the [issues](https://github.com/orauldev/todoapp/issues)
