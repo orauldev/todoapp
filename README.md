@@ -13,6 +13,6 @@ This repository is open to contributions, feel free to include your material dir
 *   A **data layer** with a repository and two data sources (local using Room and a fake remote).
 *   Dependency injection using [Hilt](https://developer.android.com/training/dependency-injection/hilt-android).
 
-![printtodoapp](https://github.com/orauldev/todoapp/assets/88858578/0f6eea45-a097-4375-93ca-7555c442655e)
+![printtodoapp](docs/printtodoapp.png "Todo App")
 
 This code contains implementation improvements by me and was inspired by [this sample](https://github.com/android/architecture-samples/tree/views-hilt)
