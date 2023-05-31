@@ -57,5 +57,4 @@ class StatisticsViewModel @Inject constructor(
                 )
             }
         }
-
 }

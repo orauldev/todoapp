@@ -114,7 +114,7 @@ class TasksFragment : Fragment() {
                     binding.progress.isVisible = uiState.isLoading
 
                     uiState.userMessage?.let { message ->
-                        binding.root.showSnackbar(message)
+                        binding.root.showSnackbar(message, binding.fabAddTask)
                         viewModel.snackbarMessageShown()
                     }
 
@@ -154,17 +154,17 @@ class TasksFragment : Fragment() {
         arguments?.let { args ->
             if (args.containsKey(AddTaskFragment.ARGS_KEY)) {
                 val userMessage = args.getInt(AddTaskFragment.ARGS_KEY)
-                binding.root.showSnackbar(userMessage)
+                binding.root.showSnackbar(userMessage, binding.fabAddTask)
                 arguments?.clear()
             }
             if (args.containsKey(TaskDetailFragment.ARGS_KEY)) {
                 val userMessage = args.getInt(TaskDetailFragment.ARGS_KEY)
-                binding.root.showSnackbar(userMessage)
+                binding.root.showSnackbar(userMessage, binding.fabAddTask)
                 arguments?.clear()
             }
             if (args.containsKey(EditTaskFragment.ARGS_KEY)) {
                 val userMessage = args.getInt(EditTaskFragment.ARGS_KEY)
-                binding.root.showSnackbar(userMessage)
+                binding.root.showSnackbar(userMessage, binding.fabAddTask)
                 arguments?.clear()
             }
         }

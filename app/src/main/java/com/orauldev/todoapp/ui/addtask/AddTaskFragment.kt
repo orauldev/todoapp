@@ -49,7 +49,7 @@ class AddTaskFragment : Fragment() {
                 viewModel.uiState.collect { uiState ->
 
                     uiState.userMessage?.let { message ->
-                        binding.root.showSnackbar(message)
+                        binding.root.showSnackbar(message, binding.fabSaveTask)
 
                         if (uiState.isTaskSaved) {
                             val args = Bundle().apply { putInt(ARGS_KEY, message) }

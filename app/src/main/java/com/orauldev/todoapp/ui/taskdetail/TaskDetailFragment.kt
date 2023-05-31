@@ -67,7 +67,7 @@ class TaskDetailFragment : Fragment() {
                 viewModel.uiState.collect { uiState ->
 
                     uiState.userMessage?.let { message ->
-                        binding.root.showSnackbar(message)
+                        binding.root.showSnackbar(message, binding.fabEditTask)
                     }
 
 

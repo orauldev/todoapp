@@ -12,6 +12,9 @@ fun View.gone() {
     visibility = View.GONE
 }
 
-fun View.showSnackbar(@StringRes message: Int) {
-    Snackbar.make(this, message, Snackbar.LENGTH_SHORT).show()
+fun View.showSnackbar(@StringRes message: Int, anchorView: View? = null) {
+    Snackbar.make(this, message, Snackbar.LENGTH_SHORT).run {
+        anchorView?.let { setAnchorView(it) }
+        show()
+    }
 }
